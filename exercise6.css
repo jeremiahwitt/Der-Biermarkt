@@ -1,0 +1,273 @@
+/* RESETTING OF VALUES */
+	html, body, header {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	h1, h2, h3, p, div, ul, li {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		position: relative;
+		font-family: Helvetica, Arial, sans-serif;
+	}
+
+/* HEADER STYLING */
+
+	header {
+		box-sizing: border-box;
+		/* POSITION */
+		position: relative;
+		top: 0;
+		left: 0;
+		
+		/* SIZING */
+		height: 15%;
+		width: 100%;
+		
+		/* APPEARANCE */
+		background-color: #DB1000;
+		color: #FF8177;
+		font-family: 'Germania One', cursive;
+		border: 5px dashed #880A00;
+	}
+	
+	#clock {
+		float: right;
+		position: absolute;
+		top: 80%;
+		right: 1%;
+	}
+
+	h1 {
+		height: 100%;
+		text-align: center;
+		font-size: 5em;
+		font-weight: bold;
+		padding-top: 0.5%;
+	}
+
+/* NAVIGATION STYLING */
+
+	nav {
+		/* POSITION */
+		position: relative;
+		top: 0%;
+		
+		/* SIZING */ 
+		height: 80%;
+		width: 15%;
+		
+		/* APPEARANCE */
+		background-color: #DB9600;
+		color: RGB(136, 65, 0);
+	}
+
+	nav ul {
+		list-style-type: none;
+		padding: 0;
+		font-family: 'Germania One', cursive;
+		font-size: 1.2em;
+		text-align: center;
+	}
+
+	nav ul li {
+		box-sizing: border-box;
+		padding: 5% 0%;
+		list-style-position: inside;
+		border-top: 0.5px solid black;
+		border-bottom: 0.5px solid black;
+	}
+
+	nav ul li:hover {
+		background-color: RGB(136, 65, 0);
+		color: #DB9600;
+	}
+
+	nav ul li a {
+		color: inherit;
+		text-decoration: none;
+	}
+	
+	/* These next two rules will ensure that the first and last elements in the nav list 
+		 have properly styled borders */
+		#first {
+			border-top: 2px solid black;
+		}
+
+		#last {
+			border-bottom: 2px solid black;
+		}
+
+/* INSIDE CONTENT */
+
+	#content {
+		/* POSITION */
+		position: relative;
+		left: 15%;
+		bottom: 80%;
+		
+		/* SIZING */
+		height: 80%;
+		width: 85%;
+		
+		/* APPEARANCE */
+		background-color: RGB(32, 32, 32);
+		color: RGB(144, 144, 106);
+		font-family: Helvetica, Arial, sans-serif;
+	}
+	
+	#content p {
+		width: 96%;
+		padding: 1% 1%;
+		margin: 1% 1%;
+	}
+	
+	h2 {
+		padding: 2% 2% 0% 2%;
+		text-align: center;
+		font-family: 'Germania One', cursive;
+	}
+	
+	h3 {
+		padding: 0% 2% 0% 2%;
+	}
+	
+	#content ul {
+		padding: 0% 5%;
+		margin: 0;
+		list-style-type: square;
+	}
+	#cent {
+		text-align: center;
+	}
+	#content strong {
+		font-weight: normal;
+		font-size: 4em;
+		font-family: 'Germania One', cursive;
+		text-shadow: 3px 3px RGB(100, 100, 62);
+	}
+	
+	 h2::first-letter {
+		background-color: RGB(50, 50, 40);
+		border-radius: 15%;
+		box-shadow: 3px 3px RGB(20, 20, 15);
+		padding: 3px;
+	}
+
+/* FOOTER STYLING */
+
+	footer {
+		box-sizing: border-box;
+		/* POSITION */
+		position: relative;
+		bottom: 80%;
+		
+		/* SIZING */
+		height: 5%;
+		width: 100%;
+		margin: 0;
+		
+		/* APPEARANCE */
+		
+		background-color: #017686;
+		border: 2px dotted; 
+		border-color: #005050;
+		font-size: 0.8em;
+		
+	}
+	
+	footer p {
+		padding: 0.5% 0 0 1%;
+	}
+
+/*  FORM STYLING */
+	
+	#register {
+		margin: 2% 10%;
+	}
+	
+	.field{
+		margin: 1%;
+	}
+	
+	#login {
+		position: relative;
+		padding: 2% 10%;
+	}
+	
+	.field input[type="text"], input[type="password"]{
+		position: absolute;
+		left: 33%;
+		/* float: left; */
+	}
+	
+/* STORE STYLING */
+
+	.item div {
+		padding: 3px;
+	}
+	
+	#store {
+		width: 100%;
+	}
+	
+	.item{
+		/* POSITION */
+		margin: 1em;
+		display: inline-block;
+		/* SIZING */
+		width: 20%;
+		/* APPEARANCE*/
+		border: solid white 2px;
+	}
+	
+	.thumbnail{
+		height: 40%;
+	}
+	
+	.thumbnail img {
+		height: 100%;
+		width: 100%;
+	}
+	
+	.item_name{
+		/* POSITION */
+		margin: 0;
+		padding: 0;
+		/* SIZING */
+		height: 2em;
+		/* APPEARANCE */
+		font-variant: small-caps;
+		overflow: visible;
+		text-align: center;
+		border-bottom: solid grey 1px;
+	}
+	
+	.item_desc {
+		height: 4em;
+	}
+	.item_desc, .price, .button {
+		/* APPEARANCE */
+		font-size: 0.8em;
+		text-align: center;
+		border-bottom: solid grey 1px;
+	}
+	
+	#checkout {
+		margin: 0.5em 5em;
+	}
+	
+	#checkoutForm{
+		margin-left: 10%;
+	}
+	
+	#total{
+		text-align: right;
+		padding-right: 2em;
+	}
